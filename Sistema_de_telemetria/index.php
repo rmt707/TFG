@@ -2,7 +2,7 @@
 <?php
     header("Refresh: 7");
 
-    $bbdd = mysqli_connect('localhost', 'root', '', 'sistema_de_telemetria') or
+    $bbdd = mysqli_connect('localhost', 'admin', 'telemetria', 'sistema_de_telemetria') or
         die("Error de conexión".mysqli_error($bbdd));
 
     mysqli_set_charset($bbdd, "utf8");
